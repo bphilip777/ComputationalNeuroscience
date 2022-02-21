@@ -21,7 +21,7 @@ for i, v in enumerate(V0):
 # Compute next voltage values
 for i in range(len(V0)):
     for j in range(1, nTims):
-        V[i][j] = El + (V[i][0] - El) * math.exp(-t[j]/tau_m)
+        V[i][j] = El + (V[i][0] - El) * math.exp(-t[j]/tau_m)  # Here it is important to remember it's the initial voltage - the Leak voltage
 
 for i in range(len(V0)):
     for j in range(1, nTims):
