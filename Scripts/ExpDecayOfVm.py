@@ -54,3 +54,4 @@ axs[2].set_title(f"Tau: {tau_m1} ms")
 
 # Show visual
 plt.show()
+
